@@ -58,6 +58,7 @@ p{
 
 .modalOpen:link {
     text-decoration: none;
+    color: white;
 }
 
 .modalOpen:visited {
