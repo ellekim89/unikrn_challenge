@@ -5,12 +5,20 @@ $(function(){
     }, 500);
   };
 
-   $('#Zero').on('click', function(){
+   $('.Zero').on('click', function(){
         scroll($("#main"));
     });
 
-   $('.reason').on('click', function(){
-        scroll($("#reason" + this.id));
+   $('.One').on('click', function(){
+        scroll($("#reasonOne"));
+    });
+
+    $('.Two').on('click', function(){
+        scroll($("#reasonTwo"));
+    });
+
+    $('.Three').on('click', function(){
+      scroll($("#reasonThree"));
     });
   });
 
