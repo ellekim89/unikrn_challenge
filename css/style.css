@@ -56,11 +56,18 @@ p{
   background-color: rgba(219, 112, 147, 0.8);
 }
 
+/*for SAFARI*/
 .fa-smile-o:link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
+
+/*for CHROME*/
+.modalOpen:link{
+  text-decoration: none;
+  color: white;
+}
 .modalOpen:visited {
     color: white;
 }
