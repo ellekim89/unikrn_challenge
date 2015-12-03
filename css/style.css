@@ -3,6 +3,114 @@
   padding: 0;
 }
 
+.row, .column {
+  box-sizing: border-box;
+}
+
+.row:before,.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.column {
+  position: relative;
+  float: left;
+}
+
+.column + .column {
+  margin-left: 1.6%;
+}
+
+.column-1 {
+  width: 6.86666666667%;
+}
+
+.column-2 {
+  width: 15.3333333333%;
+}
+
+.column-3 {
+  width: 23.8%;
+}
+
+.column-4 {
+  width: 32.2666666667%;
+}
+
+.column-5 {
+  width: 40.7333333333%;
+}
+
+.column-6 {
+  width: 49.2%;
+}
+
+.column-7 {
+  width: 57.6666666667%;
+}
+
+.column-8 {
+  width: 66.1333333333%;
+}
+
+.column-9 {
+  width: 74.6%;
+}
+
+.column-10 {
+  width: 83.0666666667%;
+}
+
+.column-11 {
+  width: 91.5333333333%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px){
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5,
+  .column-6,
+  .column-7,
+  .column-8,
+  .column-9,
+  .column-10,
+  .column-11,
+  .column-12 {
+    width: auto;
+    float: none;
+  }
+
+  .column + .column {
+    margin-left: 0;
+  }
+
+  .nav a{
+    font-size: 15px;
+  }
+
+  #vid_bg{
+  z-index: -999;
+  height:100%;
+  overflow:hidden;
+  padding-bottom: 20%;
+}
+
+#main{
+  padding-top:10%;
+}
+
+}
+
 body, html{
   height: 100%;
   text-decoration: none;
@@ -11,12 +119,26 @@ body, html{
 }
 
 .section{
+  padding-top:20px;
   min-height: 100%;
+  padding-bottom: 5%;
 }
 
 h1, h2{
   font-family: 'Roboto Condensed';
   padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+h1{
+  font-size: 40px;
+}
+
+
+img{
+  height: 250px;
+  width: 250px;
+  border-radius: 500px;
 }
 
 p{
@@ -26,135 +148,162 @@ p{
 
 .center{
   position: relative;
-  width: 60%;
-  left: 20%;
-  padding-top: 17%;
+/*  width: 60%;
+  left: 20%;*/
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 10%;
+  padding-bottom: 2%;
 }
 
-.reason{
-  background: rgba(0,0,0,.6);
-  padding-top: 10px;
-  padding-bottom: 10px;
+header{
+  top: 0;
+  position:fixed;
+  z-index: 100;
+  width: 100%;
 }
 
-.fa{
-  margin-top: 5px;
-  margin-left: 2px;
+#vid_bg{
+  z-index: -999;
+  height:100%;
+  overflow:hidden;
 }
 
-.button{
-  height: 75px;
-  width: 75px;
-  border-radius: 50px;
-  margin: 5px;
-  padding: 5px;
+.nav ul {
+  font-family: 'Roboto';
+  height: 70px;
+  list-style: none;
+  background-color: rgba(0,0,0,.4);
+  text-align: center;
+  padding: 0;,
+  margin: 0;
+}
+.nav li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
   display: inline-block;
-  border: white 1px solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  padding-top: 25px;
+  }
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: .3s background-color;
 }
 
-.button:hover{
-  background-color: rgba(219, 112, 147, 0.8);
+.nav a:hover {
+  background-color: rgba(255,0,0,.6);
+  box-shadow: 2px 3px 5px rgba(0,0,0,.5);
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.modalOpen:link {
-    text-decoration: none;
+
+
+.btn{
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  height: 35px;
+  width: 150px;
+  border-width: 0px;
+  margin: 15px;
+  border-style: none;
+  text-decoration: none;
+  font-family: 'Roboto';
+  box-shadow: 2px 3px 5px rgba(0,0,0,.5);
 }
 
-.modalOpen:visited {
-    color: white;
+.btn:hover{
+  background-color: rgba(255, 0, 0, .4);
 }
 
-.buttonWrap{
+.btn:focus{
+  outline: none;
+}
+
+
+button,form, form input{
+  display:inline;
 }
 
 #main{
-  background-color: black;
+  position:absolute;
+  top:0;
+}
+
+.reasonIcon{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.reason > ul{
+  list-style: none;
+  font-family: 'Roboto';
 }
 
 #reasonOne{
-  background: linear-gradient(
+/*  background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
     url("http://cdn.geekwire.com/wp-content/uploads/2015/09/CPC7nZ5UcAA8_26-620x349.jpg")
     no-repeat;
-  background-size:cover;
+  background-size:cover;*/
+  background: black;
 }
 
 #reasonTwo{
-    background: linear-gradient(
+/*    background: linear-gradient(
       rgba(250, 0, 0, 0.6),
       rgba(250, 0, 0, 0.6)
     ),
     url("http://cdn.geekwire.com/wp-content/uploads/2015/11/Screen-Shot-2015-11-18-at-3.16.07-PM-1240x372.png")
     no-repeat;
-  background-size: cover;
+  background-size: cover;*/
+  background-color: #232323;
 }
 
-#reasonThree{
-    background: linear-gradient(
-      rgba(250, 250, 250, 0.4),
-      rgba(250, 250, 250, 0.4)
-    ),
-    url("http://us.battle.net/hearthstone/static/images/media/wallpapers/hearthstone_wallpaper1024x768.jpg")
-    no-repeat;
-  background-size: cover;
-}
-
-.modalDialog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
-}
-
-.modalDialog:target {
-  opacity:1;
-  pointer-events: auto;
-}
-
-.modalDialog > div {
-  width: 400px;
+.skills {
   position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
   background: white;
-  color: black;
-}
-
-.close {
-  background: #606061;
-  color: white;
-  line-height: 25px;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 24px;
+  cursor: help;
+  display: inline-block;
   text-decoration: none;
-  border-radius: 12px;
-  box-shadow: 1px 1px 3px #000;
+  color: #232323;
+  outline: none;
+  margin-bottom: 15px;
 }
 
-.close:hover {
-  background: #00d9ff;
+.skills span{
+  background-color: white;
+  color: #232323;
+  padding: 5px 10px 5px 10px;
 }
 
-.elle:link {
-    color: black;
-    text-decoration: none;
+.skills span:before,
+.skills span:after {
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0;
 }
 
-.elle:visited {
-    color: black;
+.skills span:before {
+  border-top-color: white;
+  bottom: -8px;
 }
 
 @-ms-viewport{

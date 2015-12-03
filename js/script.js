@@ -5,20 +5,17 @@ $(function(){
     }, 500);
   };
 
-   $('.Zero').on('click', function(){
+   $('.homelink').on('click', function(){
         scroll($("#main"));
     });
 
-   $('.One').on('click', function(){
+   $('.reasonlink').on('click', function(){
         scroll($("#reasonOne"));
     });
 
-    $('.Two').on('click', function(){
+    $('.skillsetlink').on('click', function(){
         scroll($("#reasonTwo"));
     });
 
-    $('.Three').on('click', function(){
-      scroll($("#reasonThree"));
-    });
   });
 
