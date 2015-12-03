@@ -4,7 +4,6 @@
   <title>UNIKRN IS AWESOME.</title>
   <meta name="description" content="This website is by Elle Kim and the purpose is to hopefully impress the awesome company called, Unikrn, an eSport wagering service!">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link href="css/style.css" rel="stylesheet">
@@ -13,89 +12,124 @@
 </head>
 
 <body>
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="homelink"><a href="#">HOME</a></li>
+        <li class="reasonlink"><a href="#">REASONS</a></li>
+        <li class="skillsetlink"><a href="#">SKILL SETS</a></li>
+        <li class="skillsetlink"><a href="files/Elle_WDIResume_Reg.pdf" download="Elle_Resume">RESUME</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="vid_bg">
+    <video id="bg" src="files/coffee_video.mp4" autoplay="true" loop="true" muted="true"></video>
+  </div>
+
   <div class="section" id="main">
-    <div class="center">
-      <h1> WHY I'D LIKE TO WORK FOR UNIKRN.</h1>
-      <p> Here are the reasons why: </p><br>
-      <div class='buttonWrap'>
-        <div class="button One"><i class="fa fa-star-o fa-4x"></i></div>
-        <div class ="button Two"><i class="fa fa-heart-o fa-4x"></i></div>
-        <div class= "button Three"><i class="fa fa-group fa-4x"></i></div>
-        <a class="modalOpen" href ="#openModal"><div class="button"><i class="fa fa-smile-o fa-4x"></i></div></a>
+    <div class="center row">
+    <div class="column column-5">
+      <img src="http://ellekim89.github.io/elle_web/files/propic.jpg">
+      </div>
+      <div class="column column-6">
+      <h1> HELLO! I'M ELLE!</h1>
+      <p>I am hoping to be a future member of the Unikrn family. I graduated with a degree in psychology
+      but my passion is in web development. The idea of creating something powerful with logic and language
+      is exciting to me. I also find data scraping, user experience/interface and pimple popping videos interesting :).
+      </p>
+    <form action="files/Elle_WDIResume_Reg.pdf" download="Elle_Resume">
+      <input class="btn" type="submit" value="DL RESUME">
+    </form>
+      <button class="btn reasonlink">WHY UNIKRN?</button>
       </div>
     </div>
   </div>
 
-  <div class="section" id="reasonOne">
-    <div class="center">
-      <div class="reason">
-        <h1>BECAUSE THEY'RE <u>AWESOME</u>.</h1>
-        <p> Technology, gaming, coding... it sounds too good to be true!<br>
-        I feel like I'd learn a lot from my peers and my work
-        and I'd enjoy the work I am doing.</p>
-        <i class="fa fa-star-o fa-2x"></i>
-      </div><br>
-      <div class='buttonWrap'>
-        <div class= "button Zero"><i class="fa fa-arrow-circle-up fa-4x"></i></div>
-        <div class ="button Two"><i class="fa fa-heart-o fa-4x"></i></div>
-        <div class= "button Three"><i class="fa fa-group fa-4x"></i></div>
-        <a class="modalOpen" href ="#openModal"><div class="button"><i class="fa fa-smile-o fa-4x"></i></div></a>
-      </div>
-     </div>
-  </div>
 
-  <div class="section" id='reasonTwo'>
-    <div class="center">
-      <div class="reason">
-        <h1>BECAUSE THEY'RE <u>WOMEN FRIENDLY</u>.</h1>
+  <div class="section" id="reasonDiv">
+    <div class="center row">
+    <h1> WHY I WANT UNIKRN </h1><hr><br>
+      <div class="reason column column-4">
+        <img class="reasonIcon" src="files/unikrn_office.jpg"><br>
+        <h2>BECAUSE THEY'RE <u>AWESOME</u>.</h2>
+        <p> Technology, gaming, coding... it already sounds awesome.<br>
+        I understand that Unikrn is a startup (one that was founded by people who are passionate about eSports) and
+        that long hours may await me but I'm ready. I'm ready to be on the grind, to learn, and to hone my skills.<br>
+        </p>
+      </div>
+      <div class="reason column column-4">
+        <img class="reasonIcon" src="files/team_unikrn.png"><br>
+        <h2>BECAUSE THEY'RE <u>WOMEN FRIENDLY</u>.</h2>
         <p>Team Unikrn? Hell yeah!<br>
         I find it awesome that Unikrn created an all women team for Counter-Strike:Global Offensive.<br>
-        I feel like there is a stigma being a woman in a male dominated world of technology.<br>
-        I'd be proud to be part of a company that strives to close this gender gap.</p>
-        <i class="fa fa-heart-o fa-2x"></i>
-      </div><br>
-      <div class='buttonWrap'>
-        <div class= "button Zero"><i class="fa fa-arrow-circle-up fa-4x"></i></div>
-        <div class="button One"><i class="fa fa-star-o fa-4x"></i></div>
-        <div class= "button Three"><i class="fa fa-group fa-4x"></i></div>
-        <a class="modalOpen" href ="#openModal"><div class="button"><i class="fa fa-smile-o fa-4x"></i></div></a>
+        I feel like there is a stigma being a woman in a male dominated world of technology like how it is in gaming, and it's comforting that Unikrn views men and women equally.<br>
+        I'd love to represent Unikrn as woman working in technology.</p>
       </div>
-    </div>
+      <div class="reason column column-4">
+        <img class="reasonIcon" src="files/hearthstone.png"><br>
+        <h2>BECAUSE OF THE <u>COMMUNITY</u>.</h2>
+        <p> It's awesome that Unikrn is bringing the world together to enjoy eSports.
+            Betting (responsibly, of course) heightens
+            the experience and (hopefully) makes eSports even more excitable.
+            It's a great way for fans to discuss and debate with their bets (or Unikoins)
+            on the line.</p>
+      </div>
+     </div>
+
+    <form action="files/Elle_WDIResume_Reg.pdf" download="Elle_Resume">
+      <input class="btn" type="submit" value="DL RESUME">
+    </form>
+        <button class="btn skillsetlink">WHY ME?</button>
   </div>
 
-  <div class="section" id="reasonThree">
-    <div class="center">
-      <div class="reason">
-        <h1>BECAUSE OF THE <u>COMMUNITY</u>.</h1>
-        <p>It's awesome that Unikrn is bringing the world together to enjoy eSports.<br>
-        Betting (responsibly, of course) heightens the experience and (hopefully) makes eSports even more excitable.
-        It's a great way for fans to discuss and debate with their bets (or Unikoins) on the line.</p>
-        <i class="fa fa-group fa-2x"></i>
+
+  <div class="section" id='skillDiv'>
+    <div class="center row">
+      <h1>MY SKILLSETS</h1><hr>
+      <div class="reason column column-4">
+        <h2 class="skills"><span>LANGUAGES</span></h2>
+        <ul>
+          <li>JavaScript</li>
+          <li>Ruby</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Korean</li>
+          <li>Japanese</li>
+        </ul>
       </div>
-      <div class='buttonWrap'>
-        <div class= "button Zero"><i class="fa fa-arrow-circle-up fa-4x"></i></div>
-        <div class="button One"><i class="fa fa-star-o fa-4x"></i></div>
-        <div class ="button Two"><i class="fa fa-heart-o fa-4x"></i></div>
-        <a class="modalOpen" href ="#openModal"><div class="button"><i class="fa fa-smile-o fa-4x"></i></div></a>
+      <div class="reason column column-4">
+        <h2 class="skills"><span>FRAMEWORKS</span></h2>
+        <ul>
+          <li>Node</li>
+          <li>Express</li>
+          <li>Rails</li>
+          <li>Flask</li>
+          <li>Sails</li>
+          <li>Angular</li>
+        </ul>
+      </div>
+      <div class="reason column column-4">
+        <h2 class="skills"><span>OTHER</span></h2>
+        <ul>
+          <li>Postgresql</li>
+          <li>MongoDB</li>
+          <li>GitHub</li>
+          <li>jQuery</li>
+          <li>Awesome Personality ;)</li>
+        </ul>
       </div>
     </div>
+    <form action="http://ellekim.com">
+      <input class="btn" type="submit" value="MY PORTFOLIO">
+    </form>
+    <form action="mailto:ellekim89@gmail.com?Subject=Unikrn%20Questions" target="_top">
+      <input class="btn" type="submit" value="QUESTIONS?">
+    </form>
+   <!--  <a class="btn" href="mailto:ellekim89@gmail.com?Subject=Unikrn%20Questions" target="_top">QUESTIONS?</a> -->
   </div>
 
-<div class="modalDialog" id="openModal">
-  <div>
-    <a href="#close" title="Close" class="close">X</a>
-    <h2> ABOUT THIS PAGE</h2>
-    <p>1.) This page was created as part of Unikrn's coding challenge.</p><br>
-    <p>2.) I thought about making this site flashy with cool animations and such.
-    But if I put myself in the shoes of the marketer,
-    I'd want to get the message across to the target audience without too much distractions.
-    And I also wanted to fit with the Unikrn brand, so I went with the colors of black and white with red accents and  I chose
-    Roboto and Roboto Condensed as my fonts.</p><br>
-    <p>3.) I know that speed was key in this assignment. I do understand that Unikrn uses vanilla JavaScript rather than libraries.
-    I did use the jQuery library in order to save time but to still produce a working scroll function.</p><br>
-    <p>4.) For more information about me, please check out my portfolio at <a class="elle" href="http://www.ellekim.com" target="_blank">www.ellekim.com</a>. Thanks! </p>
-    <i class="fa fa-smile-o fa-2x"></i>
-  </div>
-</div>
+
 </body>
 </html>
