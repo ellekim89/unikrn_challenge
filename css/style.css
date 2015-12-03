@@ -197,7 +197,7 @@ header{
 }
 
 .nav a:hover {
-  background-color: rgba(255,0,0,.6);
+  background-color: rgba(128,0,0,.6);
   box-shadow: 2px 3px 5px rgba(0,0,0,.5);
   padding-right: 10px;
   padding-left: 10px;
@@ -207,7 +207,7 @@ header{
 
 .btn{
   border-radius: 20px;
-  background-color: red;
+  background-color: rgba(128,0,0,1);
   color: white;
   height: 35px;
   width: 150px;
@@ -220,7 +220,7 @@ header{
 }
 
 .btn:hover{
-  background-color: rgba(255, 0, 0, .4);
+  background-color: rgba(175, 0, 0, .4);
 }
 
 .btn:focus{
@@ -248,25 +248,11 @@ button,form, form input{
   font-family: 'Roboto';
 }
 
-#reasonOne{
-/*  background: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("http://cdn.geekwire.com/wp-content/uploads/2015/09/CPC7nZ5UcAA8_26-620x349.jpg")
-    no-repeat;
-  background-size:cover;*/
+#reasonDiv{
   background: black;
 }
 
-#reasonTwo{
-/*    background: linear-gradient(
-      rgba(250, 0, 0, 0.6),
-      rgba(250, 0, 0, 0.6)
-    ),
-    url("http://cdn.geekwire.com/wp-content/uploads/2015/11/Screen-Shot-2015-11-18-at-3.16.07-PM-1240x372.png")
-    no-repeat;
-  background-size: cover;*/
+#skillDiv{
   background-color: #232323;
 }
 
